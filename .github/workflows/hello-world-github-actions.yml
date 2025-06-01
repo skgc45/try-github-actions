@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World GitHub Actions"
-      - run: echo "Event - $ {{ github.event_name }}"
+      - run: echo "Event - ${{ github.event_name }}"
       - run: echo "Status - ${{ job.status }}"
