@@ -1,0 +1,12 @@
+name: Call Actions
+on:
+  push:
+
+jobs:
+  call-actions-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Show message
+        uses: ./.github/actions/thanks

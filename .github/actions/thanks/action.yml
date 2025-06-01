@@ -1,0 +1,5 @@
+name: Thanks Message
+description: Outputs a kind message during your CI run
+runs:
+  using: "node20"
+  main: "index.js"
