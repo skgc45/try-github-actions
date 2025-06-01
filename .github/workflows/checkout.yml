@@ -1,0 +1,11 @@
+name: Checkout action demo
+on:
+  push:
+jobs:
+  use-checkout-action-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Show Repository
+        run: head -n 2 README.md
