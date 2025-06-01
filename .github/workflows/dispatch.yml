@@ -1,0 +1,7 @@
+name: Workflow Dispatch Example
+on: workflow_dispatch
+jobs:
+  print-info-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Event - ${{ github.event_name }}"
